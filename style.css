@@ -63,8 +63,39 @@ li{
     border-radius: 5px;
     padding: 8px;
     margin-bottom: 7px;
-
 }
+@media (max-width: 480px) {
+    body {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .container {
+        width: 90vw;
+        padding: 15px;
+    }
+
+    .addTask {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 70vw;
+    }
+}
+@media (max-width: 1024px) {
+    .container {
+        width: 50vw;
+    }
+}
+
 
 
 
