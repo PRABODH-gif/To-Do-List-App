@@ -63,6 +63,14 @@ li{
     border-radius: 5px;
     padding: 8px;
     margin-bottom: 7px;
+    cursor: pointer;
+}
+li span {
+    cursor: pointer;
+}
+.deleteBtn {
+    cursor: pointer;
+}
 }
 @media (max-width: 480px) {
     body {
@@ -95,6 +103,18 @@ li{
         width: 50vw;
     }
 }
+#taskList li.selected span {
+    text-decoration: line-through;
+    color: #ff5945;        
+    font-weight: bold;
+}
+
+#taskList li.selected {
+    background: rgba(255, 255, 255, 0.2);
+    border-left: 4px solid #ff5945;
+}
+
+
 
 
 
